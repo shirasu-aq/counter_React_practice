@@ -3,7 +3,13 @@ import React from "react";
 import "./App.css";
 
 function App() {
-  return <h1>Hello!</h1>;
+  return (
+    <main>
+      <div className="countainer">
+        <h1>Counter</h1>
+      </div>
+    </main>
+  );
 }
 
 export default App;
