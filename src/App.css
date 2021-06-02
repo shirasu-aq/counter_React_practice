@@ -40,7 +40,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: black;
+  background-color: red;
   color: aliceblue;
   border-radius: 4px;
   width: 110px;
