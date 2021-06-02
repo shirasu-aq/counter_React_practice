@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Number from "./Number";
-import Buttons from "./Buttons";
+// import Buttons from "./Buttons";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <div className="countainer">
         <h1>Counter</h1>
         <Number />
-        <Buttons />
+        {/* <Buttons /> */}
       </div>
     </main>
   );

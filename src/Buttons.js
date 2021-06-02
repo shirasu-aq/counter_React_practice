@@ -1,9 +1,12 @@
 import React from "react";
 import "./App.css";
+// import Number from "./Number";
 
-const Increase = () => {
-  console.log("increase");
-};
+export function buttonEvents() {
+  const Increase = () => {
+    console.log("クリック");
+  };
+}
 
 function Buttons() {
   return (
