@@ -38,3 +38,15 @@ h1 {
   letter-spacing: 0.15em;
   font-family: monospace;
 }
+
+.btn:hover {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 4px;
+  width: 110px;
+  height: 35px;
+  font-size: 17px;
+  letter-spacing: 0.15em;
+  font-family: monospace;
+  cursor: pointer;
+}
