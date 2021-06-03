@@ -5,33 +5,31 @@ import "./App.css";
 function ButtonActions() {
   const [count, setCount] = useState(0);
 
-  const Increase = () => {
-    const nextCount = count + 1;
-
-    setCount(nextCount);
+  const increase = () => {
+    setCount(count + 1);
   };
 
-  const Decrease = () => {
+  const decrease = () => {
     setCount(count - 1);
   };
 
-  const Reset = () => {
+  const reset = () => {
     setCount(0);
   };
 
-  const spanColor = count > 0 ? "green" : "span";
+  const spanColor = count > 0 ? "green" : count < 0 ? "red" : "span";
 
   return (
     <div className="subcountainer">
       <span className={spanColor}>{count}</span>
       <div className="buttons_countainer">
-        <button className="btn" onClick={Decrease}>
+        <button className="btn" onClick={decrease}>
           DECREASE
         </button>
-        <button className="btn" onClick={Reset}>
+        <button className="btn" onClick={reset}>
           RESET
         </button>
-        <button className="btn" onClick={Increase}>
+        <button className="btn" onClick={increase}>
           INCREASE
         </button>
       </div>
