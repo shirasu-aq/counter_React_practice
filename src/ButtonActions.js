@@ -4,16 +4,11 @@ import "./App.css";
 
 function ButtonActions() {
   const [count, setCount] = useState(0);
-  // const [isGreen, setGreen] = useState(false);
 
   const Increase = () => {
     const nextCount = count + 1;
 
     setCount(nextCount);
-
-    // if (nextCount > 0) {
-    //   setGreen(true);
-    // }
   };
 
   const Decrease = () => {
