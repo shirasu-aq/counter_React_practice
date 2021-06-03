@@ -1,16 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import "./App.css";
 
-const Count = 0;
-
-const Increase = () => {
-  console.log("クリック");
-};
-
 function ButtonActions() {
+  const [count, setCount] = useState(0);
+
+  const Increase = () => {
+    setCount(count + 1);
+  };
   return (
     <div className="subcountainer">
-      <span id="zerocolor">{Count}</span>
+      <span id="zerocolor">{count}</span>
       <div className="buttons_countainer">
         <button className="btn decrease">DECREASE</button>
         <button className="btn">RESET</button>
