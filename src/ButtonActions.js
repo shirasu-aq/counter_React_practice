@@ -4,9 +4,13 @@ import "./App.css";
 
 function ButtonActions() {
   const [count, setCount] = useState(0);
+  const [isGreen, setGreen] = useState(false);
 
   const Increase = () => {
     setCount(count + 1);
+    if (count > 0) {
+      setGreen(true);
+    }
   };
 
   const Decrease = () => {
@@ -16,17 +20,18 @@ function ButtonActions() {
   const Reset = () => {
     setCount(0);
   };
+
   return (
     <div className="subcountainer">
-      <span id="zerocolor">{count}</span>
+      <span className={isGreen ? "green" : "span"}>{count}</span>
       <div className="buttons_countainer">
-        <button className="btn decrease" onClick={Decrease}>
+        <button className="btn" onClick={Decrease}>
           DECREASE
         </button>
         <button className="btn" onClick={Reset}>
           RESET
         </button>
-        <button className="btn increase" onClick={Increase}>
+        <button className="btn" onClick={Increase}>
           INCREASE
         </button>
       </div>
