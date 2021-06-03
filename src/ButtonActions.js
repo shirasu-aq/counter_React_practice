@@ -12,6 +12,10 @@ function ButtonActions() {
   const Decrease = () => {
     setCount(count - 1);
   };
+
+  const Reset = () => {
+    setCount(0);
+  };
   return (
     <div className="subcountainer">
       <span id="zerocolor">{count}</span>
@@ -19,7 +23,9 @@ function ButtonActions() {
         <button className="btn decrease" onClick={Decrease}>
           DECREASE
         </button>
-        <button className="btn">RESET</button>
+        <button className="btn" onClick={Reset}>
+          RESET
+        </button>
         <button className="btn increase" onClick={Increase}>
           INCREASE
         </button>
