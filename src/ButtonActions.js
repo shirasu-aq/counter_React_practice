@@ -19,7 +19,7 @@ function ButtonActions() {
     setCount(0);
   };
 
-  const spanColor = count > 0 ? "green" : "span";
+  const spanColor = count > 0 ? "green" : count < 0 ? "red" : "span";
 
   return (
     <div className="subcountainer">
