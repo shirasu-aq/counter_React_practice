@@ -21,7 +21,7 @@
   width: 100%;
 }
 
-#zerocolor {
+span {
   font-size: 4.5em;
   font-weight: bold;
   display: block;
@@ -58,4 +58,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.green {
+  color: green;
 }
