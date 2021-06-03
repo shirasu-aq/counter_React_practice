@@ -4,13 +4,16 @@ import "./App.css";
 
 function ButtonActions() {
   const [count, setCount] = useState(0);
-  const [isGreen, setGreen] = useState(false);
+  // const [isGreen, setGreen] = useState(false);
 
   const Increase = () => {
-    setCount(count + 1);
-    if (count > 0) {
-      setGreen(true);
-    }
+    const nextCount = count + 1;
+
+    setCount(nextCount);
+
+    // if (nextCount > 0) {
+    //   setGreen(true);
+    // }
   };
 
   const Decrease = () => {
@@ -21,9 +24,11 @@ function ButtonActions() {
     setCount(0);
   };
 
+  const spanColor = count > 0 ? "green" : "span";
+
   return (
     <div className="subcountainer">
-      <span className={isGreen ? "green" : "span"}>{count}</span>
+      <span className={spanColor}>{count}</span>
       <div className="buttons_countainer">
         <button className="btn" onClick={Decrease}>
           DECREASE
