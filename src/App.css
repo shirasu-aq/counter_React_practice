@@ -1,4 +1,4 @@
-.countainer {
+.maincountainer {
   width: 400px;
   justify-content: center;
   margin: auto;
@@ -13,6 +13,10 @@ h1 {
   font-family: sans-serif;
 }
 
+.subcountainer {
+  width: 100%;
+}
+
 #zerocolor {
   font-size: 4.5em;
   font-weight: bold;
@@ -21,12 +25,13 @@ h1 {
   color: black;
 }
 
-.buttons_container {
+.buttons_countainer {
   margin: auto;
   width: 100%;
-  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   justify-content: space-around;
-  margin-top: 50px;
+  display: flex;
 }
 
 .btn {
@@ -37,6 +42,9 @@ h1 {
   font-size: 17px;
   letter-spacing: 0.15em;
   font-family: monospace;
+  margin-top: 50px;
+  /* display: flex; */
+  justify-content: space-evenly;
 }
 
 .btn:hover {

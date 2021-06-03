@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
-import Number from "./Number";
-import Buttons from "./Buttons";
+import ButtonActions from "./ButtonActions";
 
 function App() {
   return (
     <main>
-      <div className="countainer">
+      <div className="maincountainer">
         <h1>Counter</h1>
-        <Number />
-        <Buttons />
+        <ButtonActions />
       </div>
     </main>
   );
