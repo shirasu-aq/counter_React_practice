@@ -6,9 +6,7 @@ function ButtonActions() {
   const [count, setCount] = useState(0);
 
   const increase = () => {
-    const nextCount = count + 1;
-
-    setCount(nextCount);
+    setCount(count + 1);
   };
 
   const decrease = () => {
