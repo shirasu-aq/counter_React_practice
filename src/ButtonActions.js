@@ -3,11 +3,13 @@ import "./App.css";
 
 function ButtonActions() {
   return (
-    <div className="container">
+    <div className="subcountainer">
       <span id="zerocolor">0</span>
-      <button className="btn decrease">DECREASE</button>
-      <button className="btn">RESET</button>
-      <button className="btn increase">INCREASE</button>
+      <div className="buttons_countainer">
+        <button className="btn decrease">DECREASE</button>
+        <button className="btn">RESET</button>
+        <button className="btn increase">INCREASE</button>
+      </div>
     </div>
   );
 }
