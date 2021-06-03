@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
 
-function Number() {
+function ButtonActions() {
   return (
-    <div className="buttons_container">
+    <div className="container">
+      <span id="zerocolor">0</span>
       <button className="btn decrease">DECREASE</button>
       <button className="btn">RESET</button>
       <button className="btn increase">INCREASE</button>
@@ -11,4 +12,4 @@ function Number() {
   );
 }
 
-export default Number;
+export default ButtonActions;
