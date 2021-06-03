@@ -6,14 +6,12 @@
   margin-top: 150px;
 }
 
-h1 {
-  display: block;
-  text-align: center;
-  font-size: 4em;
-  font-family: sans-serif;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.subcountainer {
+<<<<<<< HEAD .subcountainer {
   width: 100%;
 }
 
@@ -47,16 +45,13 @@ span {
   justify-content: space-evenly;
 }
 
-.btn:hover {
-  background-color: black;
-  color: aliceblue;
-  border-radius: 4px;
-  width: 110px;
-  height: 35px;
-  font-size: 17px;
-  letter-spacing: 0.15em;
-  font-family: monospace;
-  cursor: pointer;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .green {
