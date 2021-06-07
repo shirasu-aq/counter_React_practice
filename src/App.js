@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { ButtonActions } from "./ButtonActions";
 
-function App() {
+export const App = () => {
   return (
     <main>
       <div className="maincountainer">
@@ -11,6 +11,4 @@ function App() {
       </div>
     </main>
   );
-}
-
-export default App;
+};

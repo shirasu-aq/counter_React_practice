@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./App.css";
 
-function ButtonActions() {
+export const ButtonActions = () => {
   const [count, setCount] = useState(0);
 
   const increase = () => {
@@ -35,6 +35,4 @@ function ButtonActions() {
       </div>
     </div>
   );
-}
-
-export function ButtonActions();
+};
