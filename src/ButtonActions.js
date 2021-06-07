@@ -37,4 +37,4 @@ function ButtonActions() {
   );
 }
 
-export default ButtonActions;
+export function ButtonActions();
