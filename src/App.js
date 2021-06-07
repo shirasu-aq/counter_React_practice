@@ -5,7 +5,7 @@ import ButtonActions from "./ButtonActions";
 function App() {
   return (
     <main>
-      <div className="countainer">
+      <div className="maincountainer">
         <h1>Counter</h1>
         <ButtonActions />
       </div>
