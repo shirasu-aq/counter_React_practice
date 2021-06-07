@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-.App {
-  text-align: center;
-=======
 .maincountainer {
   width: 400px;
   justify-content: center;
   margin: auto;
   flex-direction: column;
   margin-top: 150px;
->>>>>>> html,css修正
 }
 
 h1 {
@@ -17,7 +12,6 @@ h1 {
   font-size: 4em;
   font-family: sans-serif;
 }
-
 
 .subcountainer {
   width: 100%;
