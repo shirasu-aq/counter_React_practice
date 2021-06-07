@@ -17,7 +17,17 @@ export const ButtonActions = () => {
     setCount(0);
   };
 
-  const spanColor = count > 0 ? "green" : count < 0 ? "red" : "span";
+  const selectSpanColor = () => {
+    if (count > 0) {
+      return "green";
+    }
+    if (count < 0) {
+      return "red";
+    }
+    return "black";
+  };
+
+  const spanColor = selectSpanColor();
 
   return (
     <div className="subcountainer">
