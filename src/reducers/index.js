@@ -1,4 +1,4 @@
-const count = (state = 0, action) => {
+const count = (state, action) => {
   switch (action.type) {
     case "INCREMENT":
       return { count: state.count + 1 };
